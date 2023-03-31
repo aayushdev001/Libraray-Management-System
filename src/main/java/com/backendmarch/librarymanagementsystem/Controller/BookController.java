@@ -18,6 +18,7 @@ public class BookController
     @PostMapping("/add-book")
     public BookResponseDTO addBook(@RequestBody BookRequestDTO bookRequestDTO) throws Exception
     {
+        int a;
         return bookService.addBook(bookRequestDTO);
     }
 }
